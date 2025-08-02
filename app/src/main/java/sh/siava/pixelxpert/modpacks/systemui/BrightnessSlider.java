@@ -405,11 +405,7 @@ public class BrightnessSlider extends XposedModPack {
 		} catch (Throwable ignored) {
 		}
 
-		QSPanelView.addView(brightnessView, BrightnessSliderOnBottom
-				? isQQS
-				? 2
-				: 1
-				: 0);
+		QSPanelView.addView(brightnessView, 2);
 
 		setObjectField(QSPanelView, "mBrightnessView", brightnessView);
 
